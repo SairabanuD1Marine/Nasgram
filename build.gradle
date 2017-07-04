@@ -6,6 +6,10 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.1'
+        classpath 'com.dicedmelon.gradle:jacoco-android:0.1.1'
+        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4.4.5"
+        classpath 'com.dicedmelon.gradle:jacoco-android:0.1.1'
+
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -15,7 +19,25 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+        maven { url "https://jitpack.io" }
     }
+}
+
+ext {
+    deploying = project.properties.get('deploying', false)
+    sdkVersion = [
+            compile: 25,
+            min: 9,
+            target: 25
+    ]
+    buildToolsVer = '25.0.2'
+    supportVersion = '25.3.1'
+    support = [
+            annotations: "com.android.support:support-annotations:$supportVersion",
+            v4: "com.android.support:support-v4:$supportVersion",
+            appcompat: "com.android.support:appcompat-v7:$supportVersion",
+            preference: "com.android.support:preference-v7:$supportVersion"
+    ]
 }
 
 task clean(type: Delete) {

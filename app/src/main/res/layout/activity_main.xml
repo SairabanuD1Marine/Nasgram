@@ -1,18 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="d1marine.com.nasgram.MainActivity">
+    tools:context="d1marine.com.nasgram.activity.MainActivity">
 
-    <TextView
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_below="@+id/toolbar"
+    android:padding="@dimen/fab_margin"
+  >
+    <com.koonat.easyfont.TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
+        font_path="fonts/PTC55F.ttf"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <com.koonat.easyfont.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView1"
+        android:background="@drawable/rounded_edit_text"
+        android:padding="3dp"
+        app:font_path="fonts/PTC55F.ttf"
+        />
+    <com.koonat.easyfont.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView1"
+        android:background="@drawable/rounded_edit_text"
+        android:padding="3dp"
+        app:font_path="fonts/caveat-regular.ttf"
+        />
+    <com.koonat.easyfont.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView1"
+        android:background="@drawable/rounded_edit_text"
+        android:padding="3dp"
+        app:font_path="fonts/Romanesco-Regular.ttf"
+        />
+    <com.koonat.easyfont.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView1"
+        android:background="@drawable/rounded_edit_text"
+        android:padding="3dp"
+        app:font_path="fonts/caveat-bold.ttf"
+        />
+    <com.koonat.easyfont.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView1"
+        android:background="@drawable/rounded_edit_text"
+        android:padding="3dp"
+        app:font_path="fonts/SourceSansPro-Regular.otf"
 
-</android.support.constraint.ConstraintLayout>
+
+        />
+
+</LinearLayout>
+
+</RelativeLayout>

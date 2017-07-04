@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Nasgram</string>
+    <string name="string_welcome">Welcome</string>
+    <string name="string_english">English</string>
+    <string name="string_arabic">Arabic</string>
+    <string name="string_login_with_facebook">Log in with Facebook</string>
+    <string name="string_signup_with_email">Sign up with email or phone number</string>
+    <string name="string_or">OR</string>
+
+    <string-array name="language">
+        <item>English</item>
+        <item>Arabic</item>
+    </string-array>
 </resources>

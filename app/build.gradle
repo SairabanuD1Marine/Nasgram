@@ -5,7 +5,7 @@ android {
     buildToolsVersion "25.0.3"
     defaultConfig {
         applicationId "d1marine.com.nasgram"
-        minSdkVersion 17
+        minSdkVersion 15
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -20,11 +20,20 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+    //swipe splash screen
+
+    //welcome screens
+    //Awesome splash screen
+    //easy font
+
+    // compile 'com.stephentuso:welcome:1.4.1'
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.github.ViksaaSkool:AwesomeSplash:v1.0.0'
+    compile 'com.github.natiginfo:EasyFont:v1.0.2'
     testCompile 'junit:junit:4.12'
 }
