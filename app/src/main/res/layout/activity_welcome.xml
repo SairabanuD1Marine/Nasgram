@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorWhite"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin">
+
+        <Spinner
+            android:id="@+id/spinner_language"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/padding5"
+            android:background="@drawable/border_spinner"
+            android:drawSelectorOnTop="true"
+            android:gravity="center"
+            android:paddingRight="9dp"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_language"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!--
+            -->
+            <com.koonat.easyfont.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp"
+                android:text="@string/app_name"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorBlack"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:font_path="fonts/AlexBrush-Regular.ttf" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/button_style"
+                android:padding="15dp">
+                <com.koonat.easyfont.TextView
+                    app:font_path="fonts/SourceSansPro-Regular.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/facebook_icon"
+                    android:drawablePadding="@dimen/padding5"
+                    android:gravity="center"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:text="@string/string_login_with_facebook"
+                    android:textColor="@android:color/white" />
+            </FrameLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:weightSum="3">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0.7dp"
+                    android:layout_weight="1.4"
+                    android:background="@color/colorGrey" />
+
+                <com.koonat.easyfont.TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_or"
+                    android:textColor="@color/colorGrey"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_weight="0.2"
+                    app:font_path="fonts/SourceSansPro-Regular.otf"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0.7dp"
+                    android:layout_weight="1.4"
+                    android:background="@color/colorGrey" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fbLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:text="@string/string_signup_with_email"
+                android:textColor="@color/colorOrange" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
