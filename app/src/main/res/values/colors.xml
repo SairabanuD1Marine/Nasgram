@@ -12,6 +12,7 @@
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorOrange">#FF7600</color>
     <color name="colorLightOrange">#F99114</color>
+    <color name="colorFadeOrange">#f9d4a8</color>
     <color name="colorBlack">#000000</color>
     <color name="colorGrey">#abaaaa</color>
     <color name="colorFacebookBlue">#46629e</color>

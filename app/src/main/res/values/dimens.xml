@@ -3,6 +3,16 @@
 
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="padding5">5dp</dimen>
-    <dimen name="TextSize40">40sp</dimen>
     <dimen name="margin_top_size">35dp</dimen>
+    <dimen name="welcome_spinner_width">100dp</dimen>
+    <dimen name="padding9">9dp</dimen>
+    <dimen name="margin24">24dp</dimen>
+    <dimen name="margin100">100dp</dimen>
+    <dimen name="textview_height">72dp</dimen>
+    <dimen name="textsize40">40sp</dimen>
+    <dimen name="margin60">60dp</dimen>
+    <dimen name="padding15">15dp</dimen>
+    <dimen name="zero_height">0dp</dimen>
+    <dimen name="view_height">0.7dp</dimen>
+    <dimen name="margin25">25dp</dimen>
 </resources>

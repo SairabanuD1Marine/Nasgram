@@ -6,6 +6,14 @@
     <string name="string_login_with_facebook">Log in with Facebook</string>
     <string name="string_signup_with_email">Sign up with email or phone number</string>
     <string name="string_or">OR</string>
+    <string name="string_already_have_acc">Already have an account?</string>
+    <string name="string_login">Log in</string>
+    <string name="string_dont_have_acc">Don\'t have an account?</string>
+    <string name="string_signup">Sign up</string>
+    <string name="string_username">Phone number, email or username</string>
+    <string name="string_password">Password</string>
+    <string name="string_forgot_login_details">Forgot your login details</string>
+    <string name="string_get_help_sign_in">Get help signing in.</string>
 
     <string-array name="language">
         <item>English</item>
