@@ -1,9 +1,329 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="d1marine.com.nasgram.activity.SignupActivity">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorWhite"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
 
-</android.support.constraint.ConstraintLayout>
+    <ScrollView
+
+        android:id="@+id/scroll_view_welcome"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin100"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/linearLayout">
+
+                <ImageView
+                    android:id="@+id/img_signup_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/margin24"
+                    android:src="@drawable/user" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/fab_margin"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <d1marine.com.nasgram.customui.CustomTextViewBold
+                            android:id="@+id/text_signup_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:minHeight="@dimen/zero_height"
+                            android:minWidth="@dimen/zero_height"
+                            android:text="@string/string_phone"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/colorGrey" />
+
+                        <d1marine.com.nasgram.customui.CustomTextViewBold
+                            android:id="@+id/text_signup_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:minHeight="@dimen/zero_height"
+                            android:minWidth="@dimen/zero_height"
+                            android:text="@string/string_email"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/colorGrey" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding5"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <View
+                            android:id="@+id/view_signup_phone"
+                            android:layout_width="@dimen/zero_height"
+                            android:layout_height="@dimen/view_height"
+                            android:layout_weight="1"
+                            android:background="@color/colorGrey" />
+
+                        <View
+                            android:id="@+id/view_signup_email"
+                            android:layout_width="@dimen/zero_height"
+                            android:layout_height="@dimen/view_height"
+                            android:layout_weight="1"
+                            android:background="@color/colorGrey" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_signup_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:gravity="center">
+
+                        <LinearLayout
+                            android:id="@+id/linear_layout_signup_phone_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin24"
+                            android:background="@drawable/edittext_style"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/padding15"
+                            android:weightSum="1.201">
+
+                            <d1marine.com.nasgram.customui.CustomTextViewBold
+                                android:id="@+id/text_signup_country_code"
+                                android:layout_width="@dimen/zero_height"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.2"
+                                android:background="@null"
+                                android:gravity="center"
+                                android:minHeight="@dimen/zero_height"
+                                android:minWidth="@dimen/zero_height"
+                                android:paddingRight="@dimen/padding4"
+                                android:text="AE +971"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/colorGrey" />
+
+                            <View
+                                android:layout_width="@dimen/view_width"
+                                android:layout_height="@dimen/view_vertical_height"
+                                android:layout_weight="0.001"
+                                android:background="@color/colorGrey"
+                                android:paddingLeft="@dimen/padding2" />
+
+                            <d1marine.com.nasgram.customui.CustomEditText
+                                android:id="@+id/edit_text_signup_phone_number"
+                                android:layout_width="@dimen/zero_height"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:hint="@string/string_phone"
+                                android:inputType="phone"
+                                android:minHeight="@dimen/zero_height"
+                                android:minWidth="@dimen/zero_height"
+                                android:paddingLeft="@dimen/padding8"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/colorGrey" />
+                        </LinearLayout>
+
+                    <d1marine.com.nasgram.customui.CustomTextViewNormal
+                        android:id="@+id/text_signup_may_recieve_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:minHeight="@dimen/zero_height"
+                        android:minWidth="@dimen/zero_height"
+                        android:text="@string/string_may_recieve_message"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorGrey" />
+
+
+                    <d1marine.com.nasgram.customui.CustomTextViewBold
+                        android:id="@+id/text_signup_phone_next_active"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/margin10"
+                        android:layout_marginTop="@dimen/padding15"
+                        android:background="@drawable/button_style"
+                        android:gravity="center"
+                        android:minHeight="@dimen/zero_height"
+                        android:minWidth="@dimen/zero_height"
+                        android:padding="@dimen/padding15"
+                        android:text="@string/string_next"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/colorWhite" />
+
+                    <d1marine.com.nasgram.customui.CustomTextViewBold
+                        android:id="@+id/text_signup_phone_next_inactive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/margin10"
+                        android:layout_marginTop="@dimen/padding15"
+                        android:background="@drawable/disabled_button_style"
+                        android:gravity="center"
+                        android:minHeight="@dimen/zero_height"
+                        android:minWidth="@dimen/zero_height"
+                        android:padding="@dimen/padding15"
+                        android:text="@string/string_next"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/colorFadeOrange" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_signup_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:orientation="vertical">
+
+                    <d1marine.com.nasgram.customui.CustomEditText
+                        android:id="@+id/edit_text_signup_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_style"
+                        android:hint="@string/string_email"
+                        android:inputType="textEmailAddress"
+                        android:minHeight="@dimen/zero_height"
+                        android:minWidth="@dimen/zero_height"
+                        android:padding="@dimen/padding15"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorGrey" />
+
+                    <d1marine.com.nasgram.customui.CustomTextViewBold
+                        android:id="@+id/text_signup_email_next_active"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/margin10"
+                        android:layout_marginTop="@dimen/padding15"
+                        android:background="@drawable/button_style"
+                        android:gravity="center"
+                        android:minHeight="@dimen/zero_height"
+                        android:minWidth="@dimen/zero_height"
+                        android:padding="@dimen/padding15"
+                        android:text="@string/string_next"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/colorWhite" />
+
+                    <d1marine.com.nasgram.customui.CustomTextViewBold
+                        android:id="@+id/text_signup_email_next_inactive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/margin10"
+                        android:layout_marginTop="@dimen/padding15"
+                        android:background="@drawable/disabled_button_style"
+                        android:gravity="center"
+                        android:minHeight="@dimen/zero_height"
+                        android:minWidth="@dimen/zero_height"
+                        android:padding="@dimen/padding15"
+                        android:text="@string/string_next"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/colorFadeOrange" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/padding5"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_height"
+            android:background="@color/colorGrey" />
+
+        <LinearLayout
+            android:id="@+id/linear_layout_signup_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/fab_margin">
+
+            <d1marine.com.nasgram.customui.CustomTextViewNormal
+                android:id="@+id/text_signup_already_have_acc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:minHeight="@dimen/zero_height"
+                android:minWidth="@dimen/zero_height"
+                android:text="@string/string_already_have_acc"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorGrey" />
+
+            <d1marine.com.nasgram.customui.CustomTextViewBold
+                android:id="@+id/text_signup_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:minHeight="@dimen/zero_height"
+                android:minWidth="@dimen/zero_height"
+                android:paddingLeft="@dimen/padding5"
+                android:text="@string/string_login"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorGrey" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

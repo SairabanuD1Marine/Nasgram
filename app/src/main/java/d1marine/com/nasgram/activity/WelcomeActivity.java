@@ -21,7 +21,6 @@ import static android.widget.AdapterView.*;
 public class WelcomeActivity extends AppCompatActivity implements OnItemSelectedListener, View.OnClickListener {
     Spinner mSpinnerLanguage;
     LinearLayout mLayoutLogin;
-    TextView mTextSignup;
     CustomTextView mTextAppName;
     CustomTextViewBold mTextLoginFb, mTextOr, mTextSIgnUpEmailPh, mTextLogin;
     CustomTextViewNormal mTextAlreadyHaveAcc;
@@ -44,6 +43,7 @@ public class WelcomeActivity extends AppCompatActivity implements OnItemSelected
         mSpinnerLanguage.setOnItemSelectedListener(this);
         mLayoutLogin.setOnClickListener(this);
         mTextLoginFb.setOnClickListener(this);
+        mTextSIgnUpEmailPh.setOnClickListener(this);
 
         String List_catagory[] = getResources().getStringArray(R.array.language);
         ArrayAdapter<String> array_catagory = new ArrayAdapter<String>(this, R.layout.frame_spinner, R.id.txt_item, List_catagory);
@@ -79,7 +79,8 @@ public class WelcomeActivity extends AppCompatActivity implements OnItemSelected
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
-        finish();
+        finishAffinity();
+        overridePendingTransition(R.anim.back_button_entry,R.anim.back_button_exit);
+
     }
 }

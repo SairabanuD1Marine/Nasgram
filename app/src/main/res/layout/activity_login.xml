@@ -5,7 +5,8 @@
     android:layout_height="fill_parent"
     android:background="@color/colorWhite"
     android:fitsSystemWindows="true"
-    android:focusable="true" android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     >
 
     <ScrollView
@@ -86,7 +87,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="30dp"
                     android:background="@drawable/edittext_style"
-                    android:hint="@string/string_username"
+                    android:hint="@string/string_phone_username"
                     android:inputType="textCapSentences"
                     android:minHeight="@dimen/zero_height"
                     android:minWidth="@dimen/zero_height"
@@ -153,6 +154,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
                     android:background="@drawable/disabled_button_style"
                     android:gravity="center"
                     android:minHeight="@dimen/zero_height"

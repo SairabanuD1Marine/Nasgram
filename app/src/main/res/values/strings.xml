@@ -10,10 +10,33 @@
     <string name="string_login">Log in</string>
     <string name="string_dont_have_acc">Don\'t have an account?</string>
     <string name="string_signup">Sign up</string>
-    <string name="string_username">Phone number, email or username</string>
+    <string name="string_phone_username">Phone number, email or username</string>
     <string name="string_password">Password</string>
     <string name="string_forgot_login_details">Forgot your login details</string>
     <string name="string_get_help_sign_in">Get help signing in.</string>
+    <string name="string_phone">Phone</string>
+    <string name="string_email">Email</string>
+    <string name="string_may_recieve_message">You may receive SMS updates from Nasgram and can opt out at any time.</string>
+    <string name="string_next">Next</string>
+    <string name="string_enter_conf_code">ENTER CONFIRMATION CODE</string>
+    <string name="string_enter_6_digit_code">Enter the 6-digit code we sent to</string>
+    <string name="string_request_a_new_one">Request a new one</string>
+    <string name="string_conf_code">Confirmation Code</string>
+    <string name="string_enter_name_password">ENTER NAME AND PASSWORD</string>
+    <string name="string_full_name">Full name</string>
+    <string name="string_create_username">CREATE USERNAME</string>
+    <string name="string_add_username">Add a username or use our suggestion. You can change this at any time.</string>
+    <string name="string_user_name">Username</string>
+    <string name="string_message_contacts_sync">Your contacts are periodically, synced and stored on our servers.</string>
+    <string name="string_message_remove_contact">To remove contacts, go to Settings and disconnect.</string>
+    <string name="string_learn_more">Learn more</string>
+    <string name="string_message_continue_without_sync">Continue without syncing contacts</string>
+    <string name="string_message_by_signing_up">By signing up, you agree to our </string>
+    <string name="string_terms_privacy_policy">Terms &amp; Privacy Policy</string>
+    <string name="string_find_fb_friends">Find Facebook Friends to Follow</string>
+    <string name="string_skip">Skip</string>
+    <string name="string_choose_who_to_follow">You choose who to follow and we\'ll never post to Facebook without your permission.</string>
+
 
     <string-array name="language">
         <item>English</item>

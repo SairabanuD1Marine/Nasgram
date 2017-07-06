@@ -1,5 +1,6 @@
 package d1marine.com.nasgram.activity;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -18,7 +19,7 @@ import d1marine.com.nasgram.customui.CustomTextView;
 import d1marine.com.nasgram.customui.CustomTextViewBold;
 import d1marine.com.nasgram.customui.CustomTextViewNormal;
 
-public class LoginActivity extends AppCompatActivity implements OnItemSelectedListener,TextWatcher {
+public class LoginActivity extends AppCompatActivity implements OnItemSelectedListener,TextWatcher,View.OnClickListener {
     Spinner mSpinnerLanguage;
     CustomTextView mTextAppName;
     CustomEditText mEditUserName,mEditPassword;
@@ -50,12 +51,24 @@ public class LoginActivity extends AppCompatActivity implements OnItemSelectedLi
         mTextLoginActive.setVisibility(View.GONE);
 
         mSpinnerLanguage.setOnItemSelectedListener(this);
-
+        mEditUserName.addTextChangedListener(this);
+        mEditPassword.addTextChangedListener(this);
+        mLayoutSignUp.setOnClickListener(this);
 
         String List_catagory[] = getResources().getStringArray(R.array.language);
         ArrayAdapter<String> array_catagory = new ArrayAdapter<String>(this, R.layout.frame_spinner, R.id.txt_item, List_catagory);
         mSpinnerLanguage.setAdapter(array_catagory);
 
+    }
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.linear_layout_login_signup:{
+                startActivity(new Intent(LoginActivity.this,WelcomeActivity.class));
+                overridePendingTransition(R.anim.activity_enter,R.anim.activity_exit);
+                break;
+            }
+        }
     }
 
     @Override
@@ -66,12 +79,6 @@ public class LoginActivity extends AppCompatActivity implements OnItemSelectedLi
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
 
-    }
-
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        overridePendingTransition(R.anim.back_button_entry,R.anim.back_button_exit);
     }
 
     @Override
@@ -86,6 +93,21 @@ public class LoginActivity extends AppCompatActivity implements OnItemSelectedLi
 
     @Override
     public void afterTextChanged(Editable s) {
+        if(mEditUserName.getText().toString().length()>0 && mEditPassword.getText().toString().length()>0){
+            mTextLoginInactive.setVisibility(View.GONE);
+            mTextLoginActive.setVisibility(View.VISIBLE);
 
+        }else{
+            mTextLoginActive.setVisibility(View.GONE);
+            mTextLoginInactive.setVisibility(View.VISIBLE);
+        }
+    }
+
+
+
+    @Override
+    public void onBackPressed() {
+        finishAffinity();
+        overridePendingTransition(R.anim.back_button_entry,R.anim.back_button_exit);
     }
 }

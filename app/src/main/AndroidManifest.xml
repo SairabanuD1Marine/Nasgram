@@ -41,8 +41,14 @@
         </activity>
         <activity
             android:name=".activity.LoginActivity"
-            android:windowSoftInputMode="adjustPan"></activity>
-        <activity android:name=".activity.SignupActivity"></activity>
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.SignupActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activity.ConfirmationCodeActivity" />
+        <activity android:name=".activity.UserDetailsActivity" />
+        <activity android:name=".activity.CreateUsernameActivity" />
+        <activity android:name=".activity.ConnectToFbActivity"></activity>
     </application>
 
 </manifest>
