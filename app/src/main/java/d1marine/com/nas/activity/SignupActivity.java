@@ -1,4 +1,4 @@
-package d1marine.com.nasgram.activity;
+package d1marine.com.nas.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,22 +6,25 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 
-import d1marine.com.nasgram.R;
-import d1marine.com.nasgram.customui.CustomEditText;
-import d1marine.com.nasgram.customui.CustomTextViewBold;
+import d1marine.com.nas.R;
+import d1marine.com.nas.customui.CustomEditText;
+import d1marine.com.nas.customui.CustomTextViewBold;
 
 public class SignupActivity extends AppCompatActivity implements View.OnClickListener, TextWatcher {
     CustomTextViewBold mTextPhone, mTextEmail, mTextCountryCode, mTextPhoneNextActive, mTextPhoneNextInactive, mTextEmailNextActive, mTextEmailNextInactive;
     LinearLayout mLayoutPhone, mLayoutEmail, mLayoutLogin;
     CustomEditText mEditPhoneNumber, mEditEmail;
     View mViewPhone, mViewEmail;
+    CustomDialogActivity mCustomDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
+
 
         mTextPhone = (CustomTextViewBold) findViewById(R.id.text_signup_phone);
         mTextEmail = (CustomTextViewBold) findViewById(R.id.text_signup_email);
@@ -37,6 +40,8 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
         mTextEmailNextActive = (CustomTextViewBold) findViewById(R.id.text_signup_email_next_active);
         mTextEmailNextInactive = (CustomTextViewBold) findViewById(R.id.text_signup_email_next_inactive);
         mEditEmail = (CustomEditText) findViewById(R.id.edit_text_signup_email);
+
+        mCustomDialog=new CustomDialogActivity(SignupActivity.this,mTextCountryCode);
 
         mLayoutPhone.setVisibility(View.VISIBLE);
         if (mLayoutPhone.getVisibility() == View.VISIBLE) {
@@ -59,11 +64,16 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
 
     }
 
+    public void dismissDialog(){
+        mCustomDialog.dismiss();
+    }
+
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.text_signup_country_code: {
-
+               // CustomDialogActivity mCustomDialog=new CustomDialogActivity(SignupActivity.this,mTextCountryCode);
+                mCustomDialog.show();
                 break;
             }
             case R.id.text_signup_phone_next_active: {

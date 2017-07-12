@@ -21,7 +21,7 @@
             android:layout_margin="@dimen/fab_margin"
             android:orientation="vertical">
 
-            <d1marine.com.nasgram.customui.CustomTextViewBold
+            <d1marine.com.nas.customui.CustomTextViewBold
                 android:id="@+id/text_crt_usr_create_username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="@color/colorBlack" />
 
-            <d1marine.com.nasgram.customui.CustomTextViewNormal
+            <d1marine.com.nas.customui.CustomTextViewNormal
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -45,7 +45,7 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/colorBlack" />
 
-            <d1marine.com.nasgram.customui.CustomEditText
+            <d1marine.com.nas.customui.CustomEditText
                 android:id="@+id/edit_text_crt_usr_username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -61,7 +61,7 @@
                 android:textColor="@color/colorBlack"
                 android:textColorHint="@color/colorGrey" />
 
-            <d1marine.com.nasgram.customui.CustomTextViewNormal
+            <d1marine.com.nas.customui.CustomTextViewNormal
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -80,7 +80,7 @@
                 android:orientation="horizontal"
                 android:weightSum="2">
 
-                <d1marine.com.nasgram.customui.CustomTextViewNormal
+                <d1marine.com.nas.customui.CustomTextViewNormal
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -94,7 +94,7 @@
                     android:textColor="@color/colorGrey"
                     android:textSize="11sp" />
 
-                <d1marine.com.nasgram.customui.CustomTextViewBold
+                <d1marine.com.nas.customui.CustomTextViewBold
                     android:id="@+id/text_crt_usr_learn_more"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -112,7 +112,7 @@
 
             </LinearLayout>
 
-            <d1marine.com.nasgram.customui.CustomTextViewBold
+            <d1marine.com.nas.customui.CustomTextViewBold
                 android:id="@+id/text_crt_usr_next_active"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -127,7 +127,7 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="@color/colorWhite" />
 
-            <d1marine.com.nasgram.customui.CustomTextViewBold
+            <d1marine.com.nas.customui.CustomTextViewBold
                 android:id="@+id/text_crt_usr_next_inactive"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -142,7 +142,7 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="@color/colorFadeOrange" />
 
-            <d1marine.com.nasgram.customui.CustomTextViewNormal
+            <d1marine.com.nas.customui.CustomTextViewNormal
                 android:id="@+id/text_crt_usr_continue_without_sync_contacts"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -154,8 +154,7 @@
                 android:paddingTop="@dimen/padding5"
                 android:text="@string/string_message_continue_without_sync"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="@color/colorPrimary"
-                 />
+                android:textColor="@color/colorPrimary" />
 
         </LinearLayout>
     </ScrollView>
@@ -175,9 +174,10 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:orientation="horizontal"
-            android:padding="@dimen/fab_margin">
+            android:padding="@dimen/fab_margin"
+           >
 
-            <d1marine.com.nasgram.customui.CustomTextViewNormal
+            <d1marine.com.nas.customui.CustomTextViewNormal
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -185,11 +185,16 @@
                 android:minHeight="@dimen/zero_height"
                 android:minWidth="@dimen/zero_height"
                 android:text="@string/string_message_by_signing_up"
-                android:textSize="12sp"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="@color/colorGrey" />
+                android:textColor="@color/colorGrey"
+                android:textSize="12sp" />
 
-            <d1marine.com.nasgram.customui.CustomTextViewBold
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "/>
+
+            <d1marine.com.nas.customui.CustomTextViewBold
                 android:id="@+id/text_crt_usr_terms_and_privacy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -197,10 +202,10 @@
                 android:gravity="center"
                 android:minHeight="@dimen/zero_height"
                 android:minWidth="@dimen/zero_height"
-                android:textSize="12sp"
                 android:text="@string/string_terms_privacy_policy"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="@color/colorGrey" />
+                android:textColor="@color/colorGrey"
+                android:textSize="12sp" />
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

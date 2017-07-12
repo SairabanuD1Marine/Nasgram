@@ -1,10 +1,7 @@
-package d1marine.com.nasgram.activity;
+package d1marine.com.nas.activity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Handler;
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.daimajia.androidanimations.library.Techniques;
@@ -12,7 +9,7 @@ import com.viksaa.sssplash.lib.activity.AwesomeSplash;
 import com.viksaa.sssplash.lib.cnst.Flags;
 import com.viksaa.sssplash.lib.model.ConfigSplash;
 
-import d1marine.com.nasgram.R;
+import d1marine.com.nas.R;
 
 public class SplashAwesomeActivity extends AwesomeSplash {
 

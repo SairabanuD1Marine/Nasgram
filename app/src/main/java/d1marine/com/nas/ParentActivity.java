@@ -1,4 +1,4 @@
-package d1marine.com.nasgram;
+package d1marine.com.nas;
 
 import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;

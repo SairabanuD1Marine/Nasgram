@@ -1,4 +1,4 @@
-package d1marine.com.nasgram.activity;
+package d1marine.com.nas.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,10 +7,10 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 
-import d1marine.com.nasgram.R;
-import d1marine.com.nasgram.customui.CustomEditText;
-import d1marine.com.nasgram.customui.CustomTextViewBold;
-import d1marine.com.nasgram.customui.CustomTextViewNormal;
+import d1marine.com.nas.R;
+import d1marine.com.nas.customui.CustomEditText;
+import d1marine.com.nas.customui.CustomTextViewBold;
+import d1marine.com.nas.customui.CustomTextViewNormal;
 
 public class ConfirmationCodeActivity extends AppCompatActivity implements View.OnClickListener,TextWatcher {
     CustomTextViewBold mTextRequestNew,mTextNextActive,mNextTextInactive;

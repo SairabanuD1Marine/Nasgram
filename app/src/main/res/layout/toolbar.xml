@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:minHeight="?attr/actionBarSize"
-    android:background="?attr/colorPrimary">
+    android:background="@color/colorBlack">
 
 
 
@@ -29,19 +29,28 @@
         android:weightSum="3.5">
 
         <ImageView
-            android:id="@+id/img_back_button"
+            android:id="@+id/img_toolbar_back_button"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_gravity="center"
             android:src="@drawable/back_button"></ImageView>
+        <d1marine.com.nas.customui.CustomTextViewNormal
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:id="@+id/text_toolbar_activity_title"
+            android:layout_gravity="left"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1.5" />
-        <TextView
-            android:id="@+id/toolbar_title"
+        <d1marine.com.nas.customui.CustomTextViewNormal
+            android:id="@+id/text_toolbar_app_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/app_name"
@@ -49,7 +58,7 @@
             android:layout_gravity="center"
             android:layout_weight="1"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/colorPrimary"
             android:textStyle="bold" />
 
 
@@ -60,7 +69,7 @@
             android:layout_weight="1" />
 
         <ImageView
-            android:id="@+id/img_english"
+            android:id="@+id/img_toolbar_english"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_marginRight="10dp"

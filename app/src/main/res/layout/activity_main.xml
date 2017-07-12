@@ -4,19 +4,19 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="d1marine.com.nasgram.activity.MainActivity">
+    tools:context="d1marine.com.nas.activity.MainActivity">
 
-    <include android:id="@+id/toolbar"
+    <include android:id="@+id/toolbar_main_activity"
         layout="@layout/toolbar"/>
 
 <LinearLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:layout_below="@+id/toolbar"
+    android:layout_below="@+id/toolbar_main_activity"
     android:padding="@dimen/fab_margin"
   >
-    <com.koonat.easyfont.TextView
+   <!-- <com.koonat.easyfont.TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -66,7 +66,7 @@
         app:font_path="fonts/SourceSansPro-Regular.otf"
 
 
-        />
+        />-->
 
 </LinearLayout>
 

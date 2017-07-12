@@ -1,4 +1,4 @@
-package d1marine.com.nasgram;
+package d1marine.com.nas;
 
 import org.junit.Test;
 

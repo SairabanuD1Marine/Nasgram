@@ -1,4 +1,4 @@
-package d1marine.com.nasgram.activity;
+package d1marine.com.nas.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -13,11 +13,11 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 
-import d1marine.com.nasgram.R;
-import d1marine.com.nasgram.customui.CustomEditText;
-import d1marine.com.nasgram.customui.CustomTextView;
-import d1marine.com.nasgram.customui.CustomTextViewBold;
-import d1marine.com.nasgram.customui.CustomTextViewNormal;
+import d1marine.com.nas.R;
+import d1marine.com.nas.customui.CustomEditText;
+import d1marine.com.nas.customui.CustomTextView;
+import d1marine.com.nas.customui.CustomTextViewBold;
+import d1marine.com.nas.customui.CustomTextViewNormal;
 
 public class LoginActivity extends AppCompatActivity implements OnItemSelectedListener,TextWatcher,View.OnClickListener {
     Spinner mSpinnerLanguage;

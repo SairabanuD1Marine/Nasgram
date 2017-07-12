@@ -25,15 +25,15 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     //swipe splash screen
-
     //welcome screens
     //Awesome splash screen
     //easy font
-
     // compile 'com.stephentuso:welcome:1.4.1'
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.github.ViksaaSkool:AwesomeSplash:v1.0.0'
     compile 'com.github.natiginfo:EasyFont:v1.0.2'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
     testCompile 'junit:junit:4.12'
 }

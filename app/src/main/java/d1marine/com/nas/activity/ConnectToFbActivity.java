@@ -1,12 +1,12 @@
-package d1marine.com.nasgram.activity;
+package d1marine.com.nas.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.FrameLayout;
 
-import d1marine.com.nasgram.R;
-import d1marine.com.nasgram.customui.CustomTextViewBold;
+import d1marine.com.nas.R;
+import d1marine.com.nas.customui.CustomTextViewBold;
 
 public class ConnectToFbActivity extends AppCompatActivity implements View.OnClickListener {
     FrameLayout mLayoutLoginWithFb;

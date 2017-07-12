@@ -24,7 +24,7 @@
                 android:layout_marginBottom="@dimen/margin24"
                 android:src="@drawable/user" />
 
-            <d1marine.com.nasgram.customui.CustomTextViewBold
+            <d1marine.com.nas.customui.CustomTextViewBold
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -36,7 +36,7 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="@color/colorBlack" />
 
-            <d1marine.com.nasgram.customui.CustomTextViewNormal
+            <d1marine.com.nas.customui.CustomTextViewNormal
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -57,7 +57,7 @@
                 android:background="@drawable/button_style"
                 android:padding="@dimen/padding15">
 
-                <d1marine.com.nasgram.customui.CustomTextViewBold
+                <d1marine.com.nas.customui.CustomTextViewBold
                     android:id="@+id/text_cnct_fb_login_with_fb"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -83,7 +83,7 @@
         android:layout_marginBottom="@dimen/padding15"
         android:orientation="vertical">
 
-            <d1marine.com.nasgram.customui.CustomTextViewBold
+            <d1marine.com.nas.customui.CustomTextViewBold
                 android:id="@+id/text_cnct_fb_skip"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

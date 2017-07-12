@@ -1,11 +1,9 @@
-package d1marine.com.nasgram.customui;
+package d1marine.com.nas.customui;
 
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
-import android.widget.TextView;
-import android.widget.Toast;
 
 
 public class CustomTextView extends android.support.v7.widget.AppCompatTextView {

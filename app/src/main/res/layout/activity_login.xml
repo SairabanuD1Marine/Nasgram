@@ -48,7 +48,7 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <d1marine.com.nasgram.customui.CustomTextView
+                <d1marine.com.nas.customui.CustomTextView
                     android:id="@+id/text_login_app_name"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/textview_height"
@@ -80,7 +80,7 @@
                           android:textColorHint="@color/colorGrey"
                           />
                   </FrameLayout>-->
-                <d1marine.com.nasgram.customui.CustomEditText
+                <d1marine.com.nas.customui.CustomEditText
                     android:id="@+id/edit_text_login_user_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -103,7 +103,7 @@
                     android:layout_marginBottom="10dp"
                     android:padding="@dimen/padding15">-->
 
-                <d1marine.com.nasgram.customui.CustomEditText
+                <d1marine.com.nas.customui.CustomEditText
                     android:id="@+id/edit_text_login_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -127,7 +127,7 @@
                      android:background="@drawable/button_style"
                      android:padding="@dimen/padding15">-->
 
-                <d1marine.com.nasgram.customui.CustomTextViewBold
+                <d1marine.com.nas.customui.CustomTextViewBold
                     android:id="@+id/text_login_login_active"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -149,7 +149,7 @@
                      android:background="@drawable/disabled_button_style"
                      android:padding="@dimen/padding15">-->
 
-                <d1marine.com.nasgram.customui.CustomTextViewBold
+                <d1marine.com.nas.customui.CustomTextViewBold
                     android:id="@+id/text_login_login_inactive"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -173,7 +173,7 @@
                     android:orientation="horizontal"
                     android:padding="@dimen/fab_margin">
 
-                    <d1marine.com.nasgram.customui.CustomTextViewNormal
+                    <d1marine.com.nas.customui.CustomTextViewNormal
                         android:id="@+id/text_login_forgot_login"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -185,7 +185,7 @@
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:textColor="@color/colorGrey" />
 
-                    <d1marine.com.nasgram.customui.CustomTextViewBold
+                    <d1marine.com.nas.customui.CustomTextViewBold
                         android:id="@+id/text_login_get_help_sign_in"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -204,7 +204,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="horizontal"
-                    android:weightSum="3">
+                    android:weightSum="3.1">
 
                     <View
                         android:layout_width="@dimen/zero_height"
@@ -212,13 +212,13 @@
                         android:layout_weight="1.4"
                         android:background="@color/colorGrey" />
 
-                    <d1marine.com.nasgram.customui.CustomTextViewBold
+                    <d1marine.com.nas.customui.CustomTextViewBold
                         android:id="@+id/text_login_or"
                         android:layout_width="@dimen/zero_height"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.2"
+                        android:layout_weight="0.3"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="@string/string_or"
                         android:textColor="@color/colorGrey" />
 
@@ -236,7 +236,7 @@
                     android:layout_height="wrap_content"
                     android:padding="@dimen/padding15">
 
-                    <d1marine.com.nasgram.customui.CustomTextViewBold
+                    <d1marine.com.nas.customui.CustomTextViewBold
                         android:id="@+id/text_login_login_with_fb"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
@@ -280,7 +280,7 @@
             android:orientation="horizontal"
             android:padding="@dimen/fab_margin">
 
-            <d1marine.com.nasgram.customui.CustomTextViewNormal
+            <d1marine.com.nas.customui.CustomTextViewNormal
                 android:id="@+id/text_login_dont_have_acc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -292,7 +292,7 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/colorGrey" />
 
-            <d1marine.com.nasgram.customui.CustomTextViewBold
+            <d1marine.com.nas.customui.CustomTextViewBold
                 android:id="@+id/text_login_signup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

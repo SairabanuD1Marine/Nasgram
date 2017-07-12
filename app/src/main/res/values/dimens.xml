@@ -13,7 +13,7 @@
     <dimen name="margin60">60dp</dimen>
     <dimen name="padding15">15dp</dimen>
     <dimen name="zero_height">0dp</dimen>
-    <dimen name="view_height">0.7dp</dimen>
+    <dimen name="view_height">1dp</dimen>
     <dimen name="margin25">25dp</dimen>
     <dimen name="margin10">10dp</dimen>
     <dimen name="padding8">8dp</dimen>
@@ -22,4 +22,5 @@
     <dimen name="view_width">0.1dp</dimen>
     <dimen name="view_vertical_height">20dp</dimen>
     <dimen name="margin30">30dp</dimen>
+    <dimen name="textsize30">30sp</dimen>
 </resources>

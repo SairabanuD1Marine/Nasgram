@@ -10,7 +10,7 @@
     android:paddingLeft="@dimen/fab_margin"
     android:background="@color/colorWhite">
 
-    <TextView
+    <d1marine.com.nas.customui.CustomTextViewNormal
         android:id="@+id/txt_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

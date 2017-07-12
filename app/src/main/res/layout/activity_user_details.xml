@@ -21,7 +21,7 @@
             android:layout_margin="@dimen/fab_margin"
             android:orientation="vertical">
 
-            <d1marine.com.nasgram.customui.CustomTextViewBold
+            <d1marine.com.nas.customui.CustomTextViewBold
                 android:id="@+id/text_user_det_enter_name_pswd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
                 android:textColor="@color/colorBlack" />
 
 
-            <d1marine.com.nasgram.customui.CustomEditText
+            <d1marine.com.nas.customui.CustomEditText
                 android:id="@+id/edit_text_user_det_full_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -50,7 +50,7 @@
                 android:textColor="@color/colorBlack"
                 android:textColorHint="@color/colorGrey" />
 
-            <d1marine.com.nasgram.customui.CustomEditText
+            <d1marine.com.nas.customui.CustomEditText
                 android:id="@+id/edit_text_user_det_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
                 android:textColorHint="@color/colorGrey" />
 
 
-            <d1marine.com.nasgram.customui.CustomTextViewBold
+            <d1marine.com.nas.customui.CustomTextViewBold
                 android:id="@+id/text_user_det_next_active"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -82,7 +82,7 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="@color/colorWhite" />
 
-            <d1marine.com.nasgram.customui.CustomTextViewBold
+            <d1marine.com.nas.customui.CustomTextViewBold
                 android:id="@+id/text_user_det_next_inactive"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

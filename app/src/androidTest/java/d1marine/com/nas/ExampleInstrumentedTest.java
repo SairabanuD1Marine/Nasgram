@@ -1,4 +1,4 @@
-package d1marine.com.nasgram;
+package d1marine.com.nas;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
